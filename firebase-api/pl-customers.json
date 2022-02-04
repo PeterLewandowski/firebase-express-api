@@ -1,0 +1,58 @@
+[
+    {
+        "CustomerId": "",
+        "firstName": "Jessica",
+        "lastName": "Alba",
+        "address": [{
+                "streetAddress": "123 California Ave",
+                "addressLine2": "",
+                "city": "Beverly Hills",
+                "state": "California",
+                "zipCode": "90210"
+        }],
+        "email": "j_alba@gmail.com",
+        "phoneNumber": "310-424-6161"
+    },
+    {
+        "CustomerId": "",
+        "firstName": "Dakota",
+        "lastName": "Johnson",
+        "address": [{
+                "streetAddress": "123 Seattle Rd",
+                "addressLine2": "apt. 202",
+                "city": "Seattle",
+                "state": "Washington",
+                "zipCode": "98101"
+        }],
+        "email": "dakota_j@gmail.com",
+        "phoneNumber": "206-962-5555"
+    },
+    {
+        "CustomerId": "",
+        "firstName": "Taylor",
+        "lastName": "Swift",
+        "address": [{
+                "streetAddress": "3780 Broadway St",
+                "addressLine2": "apt. 3102",
+                "city": "New York",
+                "state": "New York",
+                "zipCode": "10001"
+        }],
+        "email": "t_swift@aol.com",
+        "phoneNumber": "718-327-4444"
+    },
+    {
+        "CustomerId": "",
+        "firstName": "Jennifer",
+        "lastName": "Lopez",
+        "address": [{
+                "streetAddress": "5734 Biscayne Bay",
+                "addressLine2": "",
+                "city": "Miami",
+                "state": "Florida",
+                "zipCode": "33101"
+        }],
+        "email": "j_lo@daaaale.net",
+        "phoneNumber": "305-305-2155"
+    }
+]

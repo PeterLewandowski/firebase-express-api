@@ -1,0 +1,33 @@
+[{
+    "brand": "Chanel",
+    "name": "COCO NOIR",
+    "type": "Perfume",
+    "size": "1.7 oz",
+    "price": 116.00,
+    "description": "An intimate, seductive, and intensely brilliant fragrance with luminous notes." 
+},
+{
+    "brand": "Burberry",
+    "name": "Burberry London",
+    "type": "Perfume",
+    "size": "3.3 oz",
+    "price": 102.00,
+    "description": "This scent is a modern, yet elegant scent which captures and celebrates the city of London and its distinctive style." 
+},
+{
+    "brand": "Tom Ford",
+    "name": "Black Orchid Parfum",
+    "type": "Perfume",
+    "size": "1.7 oz",
+    "price": 165.00,
+    "description": "In this new olfactive journey, ylang-ylang is amplified while rum absolute and black plum become even more pronounced, augmenting the sensuality of TOM FORD‘s original perfume, Black Orchid Eau de Parfum." 
+},
+{
+    "brand": "Ralph Lauren",
+    "name": "Romance Parfum",
+    "type": "Perfume",
+    "size": "1.0 oz",
+    "price": 64.00,
+    "description": "This concentrated composition of warm floral fragrances is meant to reflect the complexity of a sensual, modern romance." 
+}
+]
