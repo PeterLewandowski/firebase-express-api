@@ -115,8 +115,8 @@ app.get('/pl-orders/:id', (req, res) => {
 app.patch('/pl-orders', (request,response) => {
 
   const { id } = request.body
-
   const db = connectToFirestore()
+  
   db.collection('pl-orders')
   .doc(id)
   .update()

@@ -82,6 +82,8 @@ app.get('/order', (req, res) => {
     })
     .catch(console.end);
 })
+
+
 app.get('/product', (req, res) => {
     const db = connectToFirestore();
     db.collection('bs-products').get()
@@ -106,6 +108,75 @@ app.post('/customer', (request,response) => {
     .catch(console.error)
 })
 
+app.post('/product', (request,response) => {
+    const db = connectToFirestore()
+    db.collection('bs-products')
+    .add(request.body)
+    .then(() => response.send("product created"))
+    .catch(console.error)
+})
+
+app.post('/order', (request,response) => {
+    const db = connectToFirestore()
+    db.collection('bs-orders')
+    .add(request.body)
+    .then(() => response.send("order created"))
+    .catch(console.error)
+})
+
+
+
+app.patch('/customer/:id', (request,response) => {
+    const db = connectToFirestore()
+    const { id } = request.params
+    const { firstName, lastName, email } = request.body
+console.log(request.body)
+    db.collection('bs-customers')
+    .doc(id)
+    .update({firstName: firstName, lastName: lastName, email: email})
+    //.add(request.body)
+    .then(() => response.send("customer updated"))
+    .catch(console.error)
+})
+
+app.patch('/product', (request,response) => {
+
+    const { id, price } = request.body
+
+    const db = connectToFirestore()
+    db.collection('bs-products')
+    .doc(id)
+    .update({price: price,id: id})
+    .then(() => response.send("product updated"))
+    .catch(console.error)
+})
+
+app.patch('/order/:id', (request,response) => {
+
+    const db = connectToFirestore()
+    const { id } = request.params
+    const { products: [{ price, SKU, quantity }] } = request.body
+console.log(request.body)
+    db.collection('bs-orders')
+    .doc(id)
+    .update({products: [{ price, SKU, quantity }]})
+    .then(() => response.send("order updated"))
+    .catch(console.error)
+})
+
+
+  //get customer document from postman
+  app.get('/customer/:id', (req, res) => {
+    const db = connectToFirestore();
+    const { id } = req.params;
+    db.collection('bs-customers').doc(id).get()
+    .then(doc => {
+        res.send(doc.data())
+       // console.log(doc.data()) //this would show the data in the terminal
+    
+    })
+    .catch(console.end);
+})
 
   
   app.listen(3000, () => {
